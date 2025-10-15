@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Lib Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .story {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Mad Lib Story</h1>
+    <div class="story" id="storyOutput"></div>
+
+    <script>
+        // Use const for fixed words, let for things that might change in a game
+        const personName = "Ziggy"; // Use const
+        const adjective = "fluffy"; // Use const
+        const noun = "toaster"; // Use const
+        let verb = "galloped"; // Use let (action might change)
+        const place = "planet Mars"; // Use const
+        let animal = "three-eyed goat"; // Use let (animal might change)
+        const number = 5000; // Use const
+        const color = "chartreuse"; // Use const
+        
+        // Bonus Variable
+        let exclamation = "Whoopee";
+
+        // Create your OWN NEW story using template literals.
+        let story = `
+            <p>Once upon a time, a space traveler named **${personName}** landed their ${adjective} ship on the ${place}.</p>
+            
+            <p>They immediately spotted a ${color} ${animal}! It wasn't shy; it suddenly ${verb} toward a giant, rusty ${noun}.</p>
+            
+            <p>"**${exclamation}!**" yelled ${personName}. "That ${noun} must weigh at least ${number} pounds!"</p>
+        `;
+
+        // Display the story
+        document.getElementById('storyOutput').innerHTML = story;
+
+        // Also log to console
+        console.log("Story:", story);
+    </script>
+</body>
+</html>

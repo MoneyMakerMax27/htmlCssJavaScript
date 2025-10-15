@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Practice</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+
+    <script>
+        // Fix the errors in this code!
+        let firstName = "Emma"; // FIX 1: Removed space. Should be 'firstName'
+        let age = "25"; // FIX 2: Added missing closing quote
+        const favoriteColor = "blue"; 
+        let secondPlace = "silver"; // FIX 3: Renamed from '2ndPlace' (can't start with a number)
+
+        // favoriteColor = "red"; // FIX 4: This line is commented out because you CANNOT change a const
+
+        // FIX 5: The message now uses the corrected variable name, 'firstName'
+        let message = `${firstName} is ${age} years old`; 
+        document.getElementById('output').textContent = message;
+
+        console.log(message);
+    </script>
+</body>
+</html>

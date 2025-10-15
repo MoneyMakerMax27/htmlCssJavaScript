@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story Builder</title>
+</head>
+<body>
+    <h1 id="sentence1"></h1>
+    <p id="sentence2"></p>
+
+    <script>
+        // Create your variables here (CHANGE THESE!)
+        let character = "Captain Kalo";
+        let place = "abandoned space station";
+        let item = "ancient map";
+        let action = "investigated";
+
+        // Use + to concatenate (join strings together)
+        // You MUST add spaces inside the quotes: " "
+        let firstSentence = character + " slowly approached the " + place + ".";
+        document.getElementById('sentence1').textContent = firstSentence;
+
+        // Use template literals with ${} (the new, cleaner way)
+        // Template literals use backticks (`) NOT single quotes (')
+        let secondSentence = `She ${action} the area and found an ${item}!`;
+        document.getElementById('sentence2').textContent = secondSentence;
+        
+        console.log(firstSentence);
+        console.log(secondSentence);
+    </script>
+</body>
+</html>
