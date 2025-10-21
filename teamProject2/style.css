@@ -1,0 +1,58 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #ffe29f, #ffa99f, #ff719a);
+    color: #222;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 113, 154, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sparkle background effect */
+.container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-radial-gradient(circle, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 1px, transparent 2px);
+    animation: sparkle 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes sparkle {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #ff3c6f;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #fff0f5;
+    position: relative;
+    z-index: 1
+}
