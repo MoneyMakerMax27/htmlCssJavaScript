@@ -5,26 +5,30 @@
     <title>Story Builder</title>
 </head>
 <body>
+    <h1>A Quick Story</h1>
     <h1 id="sentence1"></h1>
+    
     <p id="sentence2"></p>
 
     <script>
-        // Create your variables here (CHANGE THESE!)
+        // Create your variables here (Challenge: change these to make a new story!)
         let character = "Captain Kalo";
         let place = "abandoned space station";
         let item = "ancient map";
         let action = "investigated";
 
-        // Use + to concatenate (join strings together)
-        // You MUST add spaces inside the quotes: " "
+        // 1. Use + to concatenate (join strings together) - Requirement Met (h1)
+        // Note: Spaces MUST be added manually as strings (e.g., " ")
         let firstSentence = character + " slowly approached the " + place + ".";
         document.getElementById('sentence1').textContent = firstSentence;
 
-        // Use template literals with ${} (the new, cleaner way)
-        // Template literals use backticks (`) NOT single quotes (')
+        // 2. Use template literals with ${} (the cleaner, modern way) - Requirement Met (p)
+        // Note: Template literals use backticks (`)
         let secondSentence = `She ${action} the area and found an ${item}!`;
         document.getElementById('sentence2').textContent = secondSentence;
         
+        // Logging to console for testing
+        console.log("Story Output:");
         console.log(firstSentence);
         console.log(secondSentence);
     </script>

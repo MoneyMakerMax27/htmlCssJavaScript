@@ -7,26 +7,25 @@
     <h1 id="name"></h1>
     <p id="bio"></p>
     <p id="details"></p>
-
+    
     <script>
-       // AFTER (Example):
-let firstName = "Maxwell"; // Change to your first name
-let lastName = "Robertson";  // Change to your last name
-let age = 16; // Change to your age (a number, NO quotes)
-let city = "Medina"; // Change to your city
-let isStudent = true; // Set to true or false (NO quotes)
-
-        // Display the full name in the h1 tag
-        // It joins the firstName and lastName with a space.
+        // Store profile information in variables
+        let firstName = "Max";
+        let lastName = "Robertson";
+        let age = 16;
+        let city = "Medina";
+        let isStudent = true;
+        
+        // Display the full name
         document.getElementById('name').textContent = `${firstName} ${lastName}`;
-
-        // Display bio in the first paragraph
+        
+        // Display bio
         document.getElementById('bio').textContent = `I am ${age} years old and live in ${city}.`;
-
-        // Display student status in the second paragraph
+        
+        // Display student status
         document.getElementById('details').textContent = `Student: ${isStudent}`;
-
-        // Also log everything to console (F12)
+        
+        // Also log everything to console
         console.log('Name:', firstName, lastName);
         console.log('Age:', age);
         console.log('City:', city);
